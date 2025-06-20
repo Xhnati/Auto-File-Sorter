@@ -57,20 +57,20 @@ If a file type isn't recognized, it goes into the  `Others/` folder
 1. Make sure Python is installed.
 
 2. Open your terminal and run the script:
-```python file_sorter.py```
+   ```python file_sorter.py```
 
 
 3. Type sort when prompted:
-Type `sort` to organize Downloads: sort
+    Type `sort` to organize Downloads: sort
 
 
 ## The script will organize your files and display what was moved.
 
-🛠️ Requirements
+ 🛠️ Requirements
 
-º Python 3.6+
+    º Python 3.6+
 
-º Works on Windows, Linux, and macOS
+    º Works on Windows, Linux, and macOS
 
-º No third-party dependencies
+    º No third-party dependencies
 

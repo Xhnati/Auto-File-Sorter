@@ -34,8 +34,7 @@ This Python script scans your Downloads directory and automatically **sorts file
 
 1. Clone this repository or download the script:
 
-
-<pre> ```bash git clone https://github.com/Xhnati/Auto-File-Sorter.git```` </pre>
+`git clone https://github.com/Xhnati/Auto-File-Sorter.git`
 
 2. Open the folder:
 ```cd auto-file-sorter```

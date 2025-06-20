@@ -1,3 +1,8 @@
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+![NextJS](https://img.shields.io/badge/Built_with-Python)
+![OpenAI API](https://img.shields.io/badge/Powered_by-Xhanti)
+
 # 🗂️ Auto File Sorter – Python Downloads Organizer
 
 Organize your chaotic `Downloads` folder in one click!  

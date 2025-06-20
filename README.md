@@ -33,14 +33,13 @@ This Python script scans your Downloads directory and automatically **sorts file
 ## 📦 Installation
 
 1. Clone this repository or download the script:
-
-`git clone https://github.com/Xhnati/Auto-File-Sorter.git`
+    `git clone https://github.com/Xhnati/Auto-File-Sorter.git`
 
 2. Open the folder:
-```cd auto-file-sorter```
+    ```cd auto-file-sorter```
 
 3. Run the Python script:
-```python file_sorter.py```
+    ```python file_sorter.py```
 
 
 ## 🧠 How It Works
@@ -66,11 +65,11 @@ If a file type isn't recognized, it goes into the  `Others/` folder
 
 ## The script will organize your files and display what was moved.
 
- 🛠️ Requirements
+🛠️ Requirements
 
-    º Python 3.6+
+  º Python 3.6+
 
-    º Works on Windows, Linux, and macOS
+  º Works on Windows, Linux, and macOS
 
-    º No third-party dependencies
+  º No third-party dependencies
 

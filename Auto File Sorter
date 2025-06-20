@@ -1,0 +1,67 @@
+import os
+import shutil
+
+# CONFIG
+downloads = os.path.expanduser("~/Downloads")
+
+# EXTENSION MAPPINGS
+file_types = {
+    "Images": ['.jpg', '.jpeg', '.png', '.gif', '.webp'],
+    "Videos": ['.mp4', '.mkv', '.mov', '.avi', '.flv'],
+    "Music": ['.mp3', '.wav', '.opus'],
+    "Documents": ['.txt', '.pdf', '.docx', '.xlsx', '.pptx'],
+    "Apps": ['.exe', '.msi', '.apk'],
+    "ISOs": ['.iso'],
+    "Zips": ['.zip', '.rar', '.7z'],
+    "Code": ['.py', '.java', '.c', '.cpp'],
+    "Data": ['.csv', '.json', '.xml'],
+    "Others": [] 
+}
+
+# MOVE FUNCTION
+def move_file_to(folder_name, filename):
+    dest_path = os.path.join(downloads, folder_name)
+    if not os.path.exists(dest_path):
+        os.makedirs(dest_path)
+
+    source = os.path.join(downloads, filename)
+    destination_file = os.path.join(dest_path, filename)
+
+    try:
+        shutil.move(source, destination_file)
+        print(f"Moved {filename} → {folder_name}/")
+    except Exception as e:
+        print(f"Failed to move {filename}: {e}")
+
+# MAIN SORTING FUNCTION
+def sort_downloads():
+    files_sorted = 0
+
+    for filename in os.listdir(downloads):
+        full_path = os.path.join(downloads, filename)
+
+        if os.path.isfile(full_path):
+            _, ext = os.path.splitext(filename)
+            ext = ext.lower()
+            moved = False
+
+            for folder, extensions in file_types.items():
+                if ext in extensions:
+                    move_file_to(folder, filename)
+                    files_sorted += 1
+                    moved = True
+                    break
+
+            if not moved:
+                move_file_to("Others", filename)
+                files_sorted += 1
+
+    print(f"\n Done. {files_sorted} file(s) sorted.")
+
+# RUN BASED ON USER INPUT
+user_input = input("Type 'sort' to organize Downloads: ")
+
+if user_input.lower() == "sort":
+    sort_downloads()
+else:
+    print("No action taken.")

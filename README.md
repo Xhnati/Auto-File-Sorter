@@ -35,34 +35,34 @@ This Python script scans your Downloads directory and automatically **sorts file
 1. Clone this repository or download the script:
 
 
-'''git clone https://github.com/yourusername/auto-file-sorter.git'''
+```git clone https://github.com/yourusername/auto-file-sorter.git```
 
 2. Open the folder:
-cd auto-file-sorter
+```cd auto-file-sorter```
 
 3. Run the Python script:
-python file_sorter.py
+```python file_sorter.py```
 
 
 ## 🧠 How It Works
 
-Looks inside your '~/Downloads' folder
+Looks inside your `~/Downloads` folder
 
 Matches each file by its extension
 
 Moves it to the appropriate folder (auto-creates it if needed)
 
-If a file type isn't recognized, it goes into the 'Others/' folder
+If a file type isn't recognized, it goes into the  `Others/` folder
 
 💡 Usage
 1. Make sure Python is installed.
 
 2. Open your terminal and run the script:
-python file_sorter.py
+```python file_sorter.py```
 
 
 3. Type sort when prompted:
-Type 'sort' to organize Downloads: sort
+Type `sort` to organize Downloads: sort
 
 
 ## The script will organize your files and display what was moved.

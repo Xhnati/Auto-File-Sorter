@@ -36,7 +36,7 @@ This Python script scans your Downloads directory and automatically **sorts file
 
 ```bash
 git clone https://github.com/yourusername/auto-file-sorter.git
-
+'''
 
 2. Open the folder:
 
